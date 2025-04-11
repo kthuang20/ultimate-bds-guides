@@ -9,26 +9,13 @@ The more hash symbols, the smaller the header:
 ### Heading 3
 #### Heading 4
 
-```markdown
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-```
-
 ## Paragraphs
 If you want to create a new paragraph,
 
 make sure there's an extra empty line between the two paragraphs.
 
-```markdown
-If you want to create a new paragraph,
-
-make sure there's an extra empty line between the two paragraphs.
-```
-
 ## Horizontal Line
-Use three dashes, `---`, to draw a horizontal line like:
+Use three dashes to draw a horizontal line like this:
 
 ---
 
@@ -75,38 +62,23 @@ Or vice versa, an unordered list with a nested ordered list like this:
 If you wrap your text with the following characters, you can add different types of emphasis:
 
 *Italics* and **Bold** and ***Bold and Italics***
-```markdown
-*Italics* and **Bold** and ***Bold and Italics***
-```
 
 ~~Strikethrough~~ and <u>underline</u>
-```markdown
-~~Strikethrough~~ and <u>underline</u>
-```
 
 A <sup>superscript</sup> and a <sub>subscript</sub>
-```markdown
-A <sup>superscript</sup> and a <sub>subscript</sub>
-```
 
 ## LaTeX
 You can add LaTeX equations two ways:
 
 Inline like $C_6H_12O_6$
-```markdown
-Inline like $C_6H_12O_6$
-```
 
 Or displayed on its own line: $$Area = {\pi}r^2$$
-```markdown
-Or displayed on its own line: $$Area = {\pi}r^2$$
-```
 
 [Click here](https://ashki23.github.io/markdown-latex.html#mathematical-formula) for a quick reference on the most common LaTeX syntax.
 
 ## Code Blocks
-You can add inline code by adding a set of backticks `inline code`.
-To create a code block, enclose the code with a set of three backticks. 
+You can add inline code by enclosing it in a set of back quote such as `inline code`.
+To create a code block, enclose the code with a set of three back quote. 
 Make sure that you specify the language (e.g., `python`, `bash`, `html`) right after the first three:
 
 ```python
@@ -120,7 +92,7 @@ To create a blockquote, you start each line with a `>`:
 
 > If your blockquote has multiple paragraphs,
 > 
-> make sure you have any extra line with just '>' between the paragraphs.
+> make sure you have any extra line with just `>` between the paragraphs.
 
 ## Links
 If you want to show the full URL as a clickable link, just paste it directly:
@@ -133,10 +105,6 @@ But if you want to hyperlink text:
 
 Example: [Google](https://www.google.com).
 
-```markdown
-Example: [Google](https://www.google.com).
-```
-
 ## Images
 To embed an image:
 1. Add an exclamation point (!)
@@ -146,10 +114,6 @@ To embed an image:
 Here's an example of the Markdown logo:
 
 ![Markdown logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7F0ge8MNuv4S2WaFiwgs-6fQVN5FGWorjJg&s)
-
-```markdown
-![Markdown logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7F0ge8MNuv4S2WaFiwgs-6fQVN5FGWorjJg&s)
-```
 
 ## Tables
 To create a table, each line includes pipe (|) symbols to separate columns of the table.
@@ -162,24 +126,11 @@ Here's an example of a table:
 | Row 1    | Data      |
 | Row 2    | More data |
 
-```markdown
-| Column 1 | Column 2  |
-|----------|-----------|
-| Row 1    | Data      |
-| Row 2    | More data |
-```
-
 You can align table content by placing `:` on the left, middle, or right side of the dashes underneath the header for that column:
 
 | Left-Aligned | Center Aligned | Right-Aligned |
 |:------------ |:--------------:| -------------:|
 | Left text    | Center text    | Right text    |
-
-```markdown
-| Left-Aligned | Center Aligned | Right-Aligned |
-|:------------ |:--------------:| -------------:|
-| Left text    | Center text    | Right text    |
-```
 
 
 ## Footnotes
