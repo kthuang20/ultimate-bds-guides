@@ -2,7 +2,7 @@
 This guide will walk you through the basic syntax of Markdown. It’s useful for writing documentation, README files, or notes in plain text that render beautifully on platforms like GitHub.
 
 ## Headings
-You can create different sized headings by using one to six hash (`#`) symbols followed by a space and your heading text. 
+You can create different sized headings by using one to six hash (#) symbols followed by a space and your heading text. 
 The more hash symbols, the smaller the header:
 # Heading 1
 ## Heading 2
@@ -20,7 +20,7 @@ Use three dashes to draw a horizontal line like this:
 ---
 
 ## Lists
-You can create a bulleted list by using one asterisk, `*` ,followed by a space:
+You can create a bulleted list by using one asterisk, * ,followed by a space:
 * Bullet 1
 * Bullet 2
 * Bullet 3
@@ -78,7 +78,7 @@ Or displayed on its own line: $$Area = {\pi}r^2$$
 
 ## Code Blocks
 You can add inline code by enclosing it in a set of back quote such as `inline code`.
-To create a code block, enclose the code with a set of three back quote. 
+To create a code block, enclose the code with a set of three back quotes. 
 Make sure that you specify the language (e.g., `python`, `bash`, `html`) right after the first three:
 
 ```python
@@ -134,6 +134,7 @@ You can align table content by placing `:` on the left, middle, or right side of
 
 
 ## Footnotes
-In GitHub, you can reference a footnote by writing `[^1]` like this [^1].
+In GitHub, you can reference a footnote by enclosing the number in brackets such as [^1]
+and then adding the reference at the end of your file like this:
 
 [^1]: This is the first footnote.
