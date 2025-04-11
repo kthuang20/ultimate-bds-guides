@@ -20,7 +20,7 @@ Use three dashes to draw a horizontal line like this:
 ---
 
 ## Lists
-You can create a bulleted list by using one asterisk, * ,followed by a space:
+You can create a bulleted list by using one asterisk (*) followed by a space:
 * Bullet 1
 * Bullet 2
 * Bullet 3
@@ -70,9 +70,9 @@ A <sup>superscript</sup> and a <sub>subscript</sub>
 ## LaTeX
 You can add LaTeX equations two ways:
 
-Inline like $C_6H_12O_6$
+inline like $C_6H_12O_6$
 
-Or displayed on its own line: $$Area = {\pi}r^2$$
+or displayed on its own line: $$Area = {\pi}r^2$$
 
 [Click here](https://ashki23.github.io/markdown-latex.html#mathematical-formula) for a quick reference on the most common LaTeX syntax.
 
@@ -100,15 +100,19 @@ If you want to show the full URL as a clickable link, just paste it directly:
 https://www.google.com
 
 But if you want to hyperlink text:
-1. Add the text you want to be shown inside a set of brackets  [Link text]
+1. Add the text you want to be shown inside a set of brackets  [Displayed text for link]
 2. Add the url inside a set of parentheses (link)
 
 Example: [Google](https://www.google.com).
 
+```markdown
+
+```
+
 ## Images
 To embed an image:
 1. Add an exclamation point (!)
-2. Add the text representing the image inside a set of brackets  [Alternative text]
+2. Add the text representing the image inside a set of brackets  [Alternative text for image]
 3. Add the url to the link inside a set of parentheses (url for image)
 
 Here's an example of the Markdown logo:
