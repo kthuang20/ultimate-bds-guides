@@ -1,4 +1,6 @@
-# The Ultimate Beginner's Guide to Markdown
+# The Ultimate Beginner's Guide to Markdown 
+By [The BDS Exploration Hub](https://bdsexplorationhub.substack.com)
+
 This guide will walk you through the basic syntax of Markdown. It’s useful for writing documentation, README files, or notes in plain text that render beautifully on platforms like GitHub.
 
 ## Headings
