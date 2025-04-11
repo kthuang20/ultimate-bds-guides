@@ -107,10 +107,6 @@ But if you want to hyperlink text:
 
 Example: [Google](https://www.google.com).
 
-```markdown
-
-```
-
 ## Images
 To embed an image:
 1. Add an exclamation point (!)
