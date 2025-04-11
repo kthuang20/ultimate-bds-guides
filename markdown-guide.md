@@ -1,25 +1,39 @@
-# Ultimate Beginner's Guide to Markdown
+# The Ultimate Beginner's Guide to Markdown
+This guide will walk you through the basic syntax of Markdown. It’s useful for writing documentation, README files, or notes in plain text that render beautifully on platforms like GitHub.
 
-# # Heading 1
-## ## Heading 2
-### ### Heading 3
-#### #### Heading 4
+## Headings
+You can create different sized headings by using one to six hash (`#`) symbols followed by a space and your heading text. 
+The more hash symbols, the smaller the header:
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
 
-## Line Breaks 
-You can create a line break by pressing 'Enter' twice and then entering '---' like below.
+```markdown
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+```
+
+## Paragraphs
+If you want to create a new paragraph,
+
+make sure there's an extra empty line between the two paragraphs.
+
+```markdown
+If you want to create a new paragraph,
+
+make sure there's an extra empty line between the two paragraphs.
+```
+
+## Horizontal Line
+Use three dashes, `---`, to draw a horizontal line like:
 
 ---
 
-## Paragraphs
-If you press 'Enter' once and continue writing,
-it continues the sentence.
-
-But if you press 'Enter' twice before continuing to write,
-
-you create a new paragraph.
-
 ## Lists
-You can create a bulleted list by using one asterisk followed by a space:
+You can create a bulleted list by using one asterisk, `*` ,followed by a space:
 * Bullet 1
 * Bullet 2
 * Bullet 3
@@ -57,57 +71,118 @@ Or vice versa, an unordered list with a nested ordered list like this:
   2. Second item
 * Bullet 2
 
-### Todo lists
-To create a todo list, you include [ ] or [x] representing unchecked/checked to your unordered list:
-* [ ] Unchecked item
-* [x] Checked item
-
 ## Emphasis
-Surrounding your text with:
-* 1 set of asterisks (*) ➡️  *italics*
-* 2 sets of asterisks (*) ➡️ **bold**
-* 3 sets of asterisks (*) ➡️ ***bold and italics***
-* 2 sets of '~' ➡️ ~~strikethrough~~
-* `<ins> </ins>` ➡️ <ins>underline</ins>
-* `<sup> </sup>` ➡️ for <sup>superscript</sup>
-* `<sub> </sub>` ➡️ for <sub>subscript</sub>
+If you wrap your text with the following characters, you can add different types of emphasis:
+
+*Italics* and **Bold** and ***Bold and Italics***
+```markdown
+*Italics* and **Bold** and ***Bold and Italics***
+```
+
+~~Strikethrough~~ and <u>underline</u>
+```markdown
+~~Strikethrough~~ and <u>underline</u>
+```
+
+A <sup>superscript</sup> and a <sub>subscript</sub>
+```markdown
+A <sup>superscript</sup> and a <sub>subscript</sub>
+```
+
+## LaTeX
+You can add LaTeX equations two ways:
+
+Inline like $C_6H_12O_6$
+```markdown
+Inline like $C_6H_12O_6$
+```
+
+Or displayed on its own line: $$Area = {\pi}r^2$$
+```markdown
+Or displayed on its own line: $$Area = {\pi}r^2$$
+```
+
+[Click here](https://ashki23.github.io/markdown-latex.html#mathematical-formula) for a quick reference on the most common LaTeX syntax.
+
+## Code Blocks
+You can add inline code by adding a set of backticks `inline code`.
+To create a code block, enclose the code with a set of three backticks. 
+Make sure that you specify the language (e.g., `python`, `bash`, `html`) right after the first three:
+
+```python
+# Example of Python code
+def greet():
+    print("Hello, Markdown!")
+```
 
 ## Blockquote
-To create a blockquote, you start each line with a '>':
+To create a blockquote, you start each line with a `>`:
 
 > If your blockquote has multiple paragraphs,
 > 
 > make sure you have any extra line with just '>' between the paragraphs.
 
-## Code Blocks
-You can add inline code by adding a set of backticks `inline code`.
-
-If you want a block of code, surround it with three sets of backticks (`):
-```bash
-git add .
-git commit -m "First commit"
-git push
-```
-
 ## Links
-If you want to add a link, just add the url of the 
+If you want to show the full URL as a clickable link, just paste it directly:
 
-If you want to hyperlink text:
-1. Add the text you want to be shown inside one set of brackets  [Link text]
-2. Add the url inside one set of parentheses (link)
+https://www.google.com
 
-Here's an [example link to Google](https://www.google.com/)
+But if you want to hyperlink text:
+1. Add the text you want to be shown inside a set of brackets  [Link text]
+2. Add the url inside a set of parentheses (link)
+
+Example: [Google](https://www.google.com).
+
+```markdown
+Example: [Google](https://www.google.com).
+```
 
 ## Images
 To embed an image:
 1. Add an exclamation point (!)
-2. Add the text representing the image inside one set of brackets  [Alternative text]
-3. Add the url to the link inside one set of parentheses (url for image)
+2. Add the text representing the image inside a set of brackets  [Alternative text]
+3. Add the url to the link inside a set of parentheses (url for image)
 
 Here's an example of the Markdown logo:
-![Markdown logo](https://cdn.commonmark.org/uploads/default/original/2X/3/366f3614de6996d79a131fdf9b41ed7d65cfe181.png)
+
+![Markdown logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7F0ge8MNuv4S2WaFiwgs-6fQVN5FGWorjJg&s)
+
+```markdown
+![Markdown logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7F0ge8MNuv4S2WaFiwgs-6fQVN5FGWorjJg&s)
+```
+
+## Tables
+To create a table, each line includes pipe (|) symbols to separate columns of the table.
+Dashes are also used to separate the headers from the rest of the table.
+
+Here's an example of a table:
+
+| Column 1 | Column 2  |
+|----------|-----------|
+| Row 1    | Data      |
+| Row 2    | More data |
+
+```markdown
+| Column 1 | Column 2  |
+|----------|-----------|
+| Row 1    | Data      |
+| Row 2    | More data |
+```
+
+You can align table content by placing `:` on the left, middle, or right side of the dashes underneath the header for that column:
+
+| Left-Aligned | Center Aligned | Right-Aligned |
+|:------------ |:--------------:| -------------:|
+| Left text    | Center text    | Right text    |
+
+```markdown
+| Left-Aligned | Center Aligned | Right-Aligned |
+|:------------ |:--------------:| -------------:|
+| Left text    | Center text    | Right text    |
+```
+
 
 ## Footnotes
-You can reference to a footnote putting ^1 inside brackets [^1]
+In GitHub, you can reference a footnote by writing `[^1]` like this [^1].
 
 [^1]: This is the first footnote.
